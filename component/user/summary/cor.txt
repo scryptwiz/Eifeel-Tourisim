@@ -1,0 +1,33 @@
+<div id="summary_cont">
+                        <!-- date -->
+                        <div>
+                            <h5>Date : </h5>
+                            <h3 id="num">0</h3>
+                        </div>
+                        <!-- Time -->
+                        <div>
+                            <h5>Time : </h5>
+                            <h3 id="num">0</h3>
+                        </div>
+                        <!-- Number of persons -->
+                        <div>
+                            <h5>No Of Persons : </h5>
+                            <h3 id="num">0</h3>
+                        </div>
+                        <!-- age class -->
+                        <div>
+                            <h5>Age Classification : </h5>
+                            <h3 id="num">0</h3>
+                        </div>
+                        <!-- floor access -->
+                        <div>
+                            <h5>Floor Access : </h5>
+                            <h3 id="num">0</h3>
+                        </div>
+                        <!-- btn -->
+                        <div id="btn">
+                            <button id="edit">Edit</button>
+                            <button id="danger">Delete</button>
+                            <button id="success">Confirm</button>
+                        </div>
+                    </div>

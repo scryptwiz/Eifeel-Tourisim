@@ -1,0 +1,663 @@
+/* Main Container */
+#main{
+    display: none;
+}
+/* Navbar */
+#navbar {
+    background-color: rgba(53, 51, 51, 0.5);
+    padding: 24px 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+}
+
+#link_wrapper >ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link_wrapper >ul >li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#link_wrapper >ul >li > a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16spx;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#link_wrapper >ul > li >#active {
+    color: #ff4838;
+}
+
+#link_wrapper >ul >li:hover {
+    text-decoration: 2px dashed underline;
+    transition: .5s;
+}
+
+#profile_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user {
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/user.png');
+    cursor: pointer;
+}
+
+#dropdown_content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px 16px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    flex-direction: column;
+}
+
+#dropdown_content > a {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#dropdown_content > a:hover {
+    color: #ff4838;
+}
+
+#dropdown_content > #next {
+    margin-top: 15px;
+}
+
+#mobile_nav {
+    display: none;
+}
+
+#mobile_nav_content {
+    display: none;
+}
+
+/* Banner */
+#banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../images/bg_images/eiffel-tower3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#banner_content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner_content > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#banner_content > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 52px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#banner_content > a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #ff4838;
+    margin-top: 17px;
+    border: 1px solid #ff4838;
+}
+
+#book_link {
+    color: #fff!important;
+}
+
+#banner_content > a:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ff4838;
+    color: #ff4838!important;
+    transition: .5s;
+}
+
+#topic {
+    width: 80%;
+    margin: 100px auto 50px auto;
+}
+
+#topic > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    color: #2d373c;
+}
+
+#topic > #sub_topic {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topic > #sub_topic > p {
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 50%;
+}
+
+#topic > #sub_topic > button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #ff4838;
+    margin-top: 17px;
+    border: 1px solid #ff4838;
+}
+
+#topic > #sub_topic > button:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ff4838;
+    color: #ff4838;
+    transition: .5s;
+}
+
+#tours_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+#tours_container > #tours {
+    width: 30%;
+    /* height: 400px; */
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 8px rgba(128, 128, 128, 0.411);
+    cursor: pointer;
+}
+
+#tours_container > #tours > #img_container {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px!important;
+}
+
+#tours_container > #tours > #img_container >img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px!important;
+}
+
+#reviews_container {
+    margin-top: 100px;
+    padding: 100px 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg_images/tower.png');
+}
+
+#reviews_container > #reviews_content_container {
+    width: 80%;
+}
+
+#reviews_container > #reviews_content_container > #reviews_content_header {
+    margin-left: 30px;
+}
+
+#reviews_container > #reviews_content_container > #reviews_content_header > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+}
+
+#reviews_container > #reviews_content_container > #reviews_content_header > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    width: 40%;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div {
+    width: 32%;
+    border-radius: 2px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content {
+    padding: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container {
+    display: flex;
+    align-items: center;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container > #user_img {
+    width: 55px;
+    height: 55px;
+    background-color: #666;
+    border-radius: 50%;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container > #user_name_rating {
+    margin-left: 30px;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container > #user_name_rating  > h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #666;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container > #user_name_rating > ul {
+    display: flex;
+    gap: 0.2rem;
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #profile_container > #user_name_rating > ul > #star {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-image: url('../images/icons/star.png');
+}
+
+#reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content > #review_message {
+    color: #666;
+    margin-top: 20px;
+}
+
+/* footer */
+#footer_container {
+    padding: 40px 0px;
+    /* margin-top: 50px; */
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_container > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+
+#footer_container > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+}
+
+#footer_container > #social_media {
+    display: flex;
+    margin-top: 10px;
+    gap: 0.7rem;
+}
+
+#footer_container > #social_media > li {
+    list-style: none;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    cursor: pointer;
+}
+
+#footer_container > #social_media > #facebook {
+    background-image: url('../images/icons/facebook.png');
+}
+
+#footer_container > #social_media > #twitter {
+    background-image: url('../images/icons/twitter.png');
+}
+
+#footer_container > #social_media > #youtube {
+    background-image: url('../images/icons/youtube.png');
+}
+
+#footer_container > #social_media > #linkedin {
+    background-image: url('../images/icons/linkedin.png');
+}
+
+
+@media screen and (max-width: 1024px) {
+    #topic {
+        width: 85%;
+        margin: 70px auto 50px auto;
+    }
+    #topic > h1 {
+        font-size: 32px;
+    }
+    #topic > #sub_topic > p {
+        font-size: 14px;
+    }
+    #topic > #sub_topic > button {  
+        font-size: 14px;
+    }
+    #tours_container {
+        justify-content: space-between;
+    }
+    #tours_container > #tours {
+        width: 45%;
+    }
+    /* reviews */
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div {
+        width: 100%;
+    }
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div:nth-child(2) {
+        margin-left: 30px;
+    }
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div:nth-child(3) {
+        margin-left: 30px;
+    }
+    #reviews_container > #reviews_content_container > #reviews_content_header {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #reviews_container > #reviews_content_container > #reviews_content_header > h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    #reviews_container > #reviews_content_container > #reviews_content_header > p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 520px) {
+    /* Responsiveness for Navbar */
+    #link_wrapper {
+        display: none;
+    }
+    #mobile_nav {
+        display: block;
+    }
+    #mobile_nav > ul > li {
+        list-style: none;
+    } 
+    #mobile_nav > ul >li > #menu {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/icons/menu.png');
+        cursor: pointer;
+    }
+    #mobile_nav > ul >li > #close {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/icons/close.png');
+        display: none;
+        cursor: pointer;
+    }
+    #mobile_nav_content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 75%;
+    }
+    
+    #mobile_nav_link_container {
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        position: relative;
+    }
+
+    #mobile_nav_link_container > #logo_section {
+        padding: 30px;
+    }
+    
+    #mobile_nav_link_container > #logo_section > #logo {
+        color: orangered;
+        cursor: pointer;
+        font-size: 50px;
+    }
+
+    #mobile_nav_link_container > #links_section {
+        height: 60%;
+        padding: 30px;
+    }
+
+    #mobile_nav_link_container > #links_section > ul {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    #mobile_nav_link_container > #links_section > ul > li {
+        letter-spacing: 1px;
+        font-size: 16spx;
+        list-style: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    #mobile_nav_link_container > #links_section > ul > li:hover {
+        color: orangered;
+    }
+    
+    /* Banner */
+    #banner_content > p {
+        font-size: 18px;
+    }
+    #banner_content > h1 {
+        font-size: 42px;
+    }
+    #banner_content > button {
+        font-size: 16px;
+        border-radius: 3px;
+    }
+
+    /* Review */
+    #reviews_container {
+        padding: 20px 0px;
+    }
+
+    #reviews_container > #reviews_content_container > #reviews_content_header {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #reviews_container > #reviews_content_container > #reviews_content_header > h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    #reviews_container > #reviews_content_container > #reviews_content_header > p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+    }
+
+    /* footer */
+    #footer_container > p {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 320px) {
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div > #reviews_content {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 600px) { 
+    #topic {
+        width: 85%;
+        margin: 70px auto 50px auto;
+    }
+    #topic > #sub_topic {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #topic > #sub_topic > p {
+        width: 100%;
+    }
+    #topic > #sub_topic > button {
+        margin-top: 35px;
+    }
+    /* tours */
+    #tours_container {
+        justify-content: center;
+    }
+    #tours_container > #tours {
+        width: 100%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Reviews */
+    #reviews_container {
+        padding: 50px 0px;
+    }
+    #reviews_container > #reviews_content_container > #reviews_content_header > p {
+        width: 90%;
+    }
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div:nth-child(2) {
+        margin-left: 20px;
+    }
+    #reviews_container > #reviews_content_container > #reviews_sub_container > div:nth-child(3) {
+        margin-left: 20px;
+    }
+}
+
+
+
+#my_img{
+    width: 100%;
+    background-image: url('./assets/images/bg_images/eiffel-tower3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

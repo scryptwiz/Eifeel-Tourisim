@@ -1,0 +1,54 @@
+#main > #form_container > form > div {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .5px;
+    width: 80%;
+    word-break: normal;
+    margin-top: 14px;
+}
+
+#main > #form_container > form > #error_msg {
+    padding: 16px;
+    background-color: #ff4838;
+}
+
+#main > #form_container > form > #success_msg {
+    padding: 16px;
+    background-color: green;
+}
+
+#main > #form_container > form > #first {
+    margin-top: 20px;
+}
+
+#main > #form_container > form > input {
+    margin-top: 25px;
+}
+
+#main > #form_container > form > div {
+    margin-top: 28px;
+}
+
+#main > #form_container > form > div {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .5px;
+    width: 80%;
+    word-break: normal;
+    margin-top: 14px;
+}
+
+#main > #form_container > form > #error_msg {
+    padding: 16px;  
+    background-color: #ff4838;
+}
+
+#main > #form_container > form > div {
+    width: 90%;
+}

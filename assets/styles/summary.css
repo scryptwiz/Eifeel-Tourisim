@@ -1,0 +1,109 @@
+#summary_stat_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#summary_stat_cont > #summary_cont {
+    width: 37%;
+    border-radius: 5px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 2px rgba(102, 102, 102, 0.3);
+    padding: 30px;
+    margin-top: 5px;
+}
+
+#summary_stat_cont > #summary_cont > div {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#summary_stat_cont > #summary_cont > form {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#summary_stat_cont > #summary_cont > #btn {
+    margin-top: 10px;
+}
+
+#summary_stat_cont > #summary_cont > div > h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#summary_stat_cont > #summary_cont > div > #num {
+    font-size: 14px;
+}
+
+#summary_stat_cont > #summary_cont > div> a> button {
+    padding: 7px 15px;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#summary_stat_cont > #summary_cont > div >  a > button {
+    padding: 7px 15px;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#summary_stat_cont > #summary_cont > div > a > #edit {
+    background-color: rgb(42, 42, 197);
+    border: 1px solid rgb(42, 42, 197);
+}
+
+#summary_stat_cont > #summary_cont > div > a > #edit:hover {
+    background-color: transparent;
+    color: rgb(42, 42, 197);
+}
+
+#summary_stat_cont > #summary_cont > div > a > #danger {
+    border: 1px solid #ff4838;
+    background-color: #ff4838;
+}
+
+#summary_stat_cont > #summary_cont > div > a  > #danger:hover {
+    background-color: transparent;
+    color: #ff4838;
+}
+
+#summary_stat_cont > #summary_cont > div > a > #success {
+    border: 1px solid green;
+    background-color: green;
+}
+
+#summary_stat_cont > #summary_cont > div> a > #success:hover {
+    background-color: transparent;
+    color: green;
+}
+
+@media screen and (max-width: 768px) {
+    #summary_stat_cont > #summary_cont {
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #summary_stat_cont > #summary_cont > form > button {
+        margin-top: 5px;
+    }
+    #summary_stat_cont > #summary_cont {
+        height: fit-content;
+    }
+}

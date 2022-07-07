@@ -1,0 +1,48 @@
+#faq_cont {
+    padding: 30px;
+    width: 70%;
+    margin: 0px auto;
+}
+
+#faq_cont > #faq {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+#faq_cont > #faq > #message {
+    border-left: 1px solid #666;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 2px rgba(102, 102, 102, 0.344);
+}
+
+#faq_cont > form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faq_cont > form > input{
+    padding: 10px 15px;
+    border-radius: 3px;
+    width: 50%;
+    outline: none;
+    border: 1px solid #666;
+}
+
+#faq_cont > form > button {
+    padding: 10px;
+    border: 1px solid #ff4838;
+    background-color: #ff4838;
+    border-radius: 3px;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) { 
+    #faq_cont {
+        padding: 30px;
+        width: 80%;
+        margin: 0px auto;
+    }
+}

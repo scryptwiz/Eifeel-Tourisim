@@ -1,0 +1,205 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex!important;
+    justify-content: center;
+}
+
+#left_screen_nav {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 0.1px solid rgba(102, 102, 102, 0.3);
+}
+
+#left_screen_nav > div  {
+    width: 70%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#desk_logo {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    color: #ff4838;
+}
+
+#left_screen_nav > div > #nav_link {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    flex-direction: column;
+}
+
+#left_screen_nav > div > ul >li {
+    list-style: none;
+}
+
+#left_screen_nav > div > ul > li > a {
+    transition: 0.5s;
+}
+
+#left_screen_nav > div > ul > li > a:hover {
+    color: #ff4838;
+}
+
+#right_container {
+    width: 80%;
+    height: 100%;
+}
+
+#right_container > #mobile_nav {
+    display: none;
+}
+
+#right_container > #dash_content {
+    margin: 50px auto;
+    width: 80%;
+}
+
+#right_container > #dash_content > h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #666;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+#right_container > #dash_content > #booking_stat_cont {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#right_container > #dash_content > #booking_stat_cont > #booking_stat {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 2px rgba(102, 102, 102, 0.3);
+}
+
+#right_container > #dash_content > #booking_stat_cont > #booking_stat > h4 {
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+}
+
+#right_container > #dash_content > #booking_stat_cont > #booking_stat > #num {
+    font-size: 36px;
+    color: #666;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 620px) {
+    #left_screen_nav {
+        display: none;
+    }
+    #right_container {
+        width: 100%;
+    }
+    #right_container > #mobile_nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+    }
+    #mobile_nav > ul > li {
+        list-style: none;
+    } 
+    #mobile_nav > ul >li > #menu {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/icons/dark_menu.png');
+        cursor: pointer;
+    }
+    #mobile_nav > ul >li > #close {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/icons/dark_close.png');
+        display: none;
+        cursor: pointer;
+    }
+    #mobile_nav_content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }   
+    #mobile_nav_link_container {
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        position: relative;
+    }
+    #mobile_nav_link_container > #logo_section {
+        padding: 30px;
+    }
+    #mobile_nav_link_container > #logo_section > #logo {
+        color: orangered;
+        cursor: pointer;
+        font-size: 50px;
+    }
+    #mobile_nav_link_container > #links_section {
+        height: 55%;
+        padding: 30px;
+    }
+    #mobile_nav_link_container > #links_section > ul {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #mobile_nav_link_container > #links_section > ul > li {
+        letter-spacing: 1px;
+        font-size: 16spx;
+        list-style: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    #mobile_nav_link_container > #links_section > ul > li:hover {
+        color: orangered;
+    }
+    #right_container > #dash_content {
+        margin: 5px auto;
+        width: 85%;
+    }
+    #right_container > #dash_content > #booking_stat_cont {
+        margin-top: 20px;
+    }
+    #right_container > #dash_content > #booking_stat_cont > #booking_stat {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
